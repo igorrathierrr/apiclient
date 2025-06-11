@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import { useSearchParams,useRouter } from "next/navigation";
 
 
@@ -21,7 +22,7 @@ export default function DeleteUniversity() {
         return (
             <div>
                 <h1>Deletar Universidade</h1>
-                <button onClick={handleDelete}>Deletar</button>
+                <Button variant="destructive" onClick={handleDelete}>Deletar</Button>
             </div>
         )
     }

@@ -1,4 +1,7 @@
 "use client"
+
+import { Button } from "@/components/ui/button";
+
 export default function NewUniversity() {
 
     async function saveUniversity(event: React.FormEvent) {
@@ -35,7 +38,7 @@ export default function NewUniversity() {
                 <input type="text" placeholder="Nome " id="nome" />
                 <input type="text" placeholder="Endereço" id="endereco" /> <br />
 
-                <button type="submit"> Salvar </button>
+                <Button type="submit"> Salvar </Button>
 
 
             </form>
