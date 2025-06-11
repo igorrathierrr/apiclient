@@ -26,7 +26,6 @@ export default function NewUniversity() {
         } catch (error) {
             console.log(error)
         }
-
     }
     return (
         <div>
