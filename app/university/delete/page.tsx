@@ -2,9 +2,10 @@
 
 import { Button } from "@/components/ui/button";
 import { useSearchParams,useRouter } from "next/navigation";
+import { Suspense } from "react";
 
 
-export default function DeleteUniversity() {
+ function Page() {
     const id = useSearchParams().get("id");
     const router = useRouter();
 
@@ -23,6 +24,15 @@ export default function DeleteUniversity() {
             <div>
                 <h1>Deletar Universidade</h1>
                 <Button variant="destructive" onClick={handleDelete}>Deletar</Button>
+
             </div>
         )
+    }
+
+    export default function DeleteUniversity() {
+        return (
+            <Suspense >
+                <DeleteUniversity />
+            </Suspense>
+        );
     }
