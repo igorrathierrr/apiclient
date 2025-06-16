@@ -19,9 +19,12 @@ export default function DeleteUniversity() {
             }
         }
         return (
-            <div>
-                <h1>Deletar Universidade? </h1>
-                <Button variant="destructive" onClick={handleDelete}>Deletar</Button>
+            <div className="flex flex-col items-center justify-center min-h-[150px] gap-4 bg-card rounded-md shadow p-4 mx-auto max-w-sm">
+                <h1 className="text-lg font-semibold text-destructive">Deletar Universidade?</h1>
+                <p className="text-sm text-muted-foreground text-center">Tem certeza que deseja deletar? Esta ação não pode ser desfeita.</p>
+                <Button variant="destructive" size="sm" className="w-full" onClick={handleDelete}>
+                    Deletar
+                </Button>
             </div>
         );
     }

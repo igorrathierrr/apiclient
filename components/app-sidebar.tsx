@@ -52,18 +52,18 @@ const data = {
   ],
   navMain: [
     {
-      title: "Playground",
+      title: "Universidades",
       url: "#",
       icon: SquareTerminal,
       isActive: true,
       items: [
         {
-          title: "History",
-          url: "#",
+          title: "Cadastrar",
+          url: "/university/new",
         },
         {
-          title: "Starred",
-          url: "#",
+          title: "Listar",
+          url: "/university",
         },
         {
           title: "Settings",

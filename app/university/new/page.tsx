@@ -31,16 +31,46 @@ export default function NewUniversity() {
         }
     }
     return (
-        <div>
-            <h1>Cadastrar Univesidade</h1>
-            <form onSubmit={saveUniversity}>
-                <input type="text" placeholder="Abreviatura Universidade" id="abreviatura" required />
-                <input type="text" placeholder="Nome " id="nome" />
-                <input type="text" placeholder="Endereço" id="endereco" /> <br />
-
-                <Button type="submit"> Salvar </Button>
-
-
+        <div className="max-w-md mx-auto mt-10 p-8 bg-white rounded-lg shadow-md">
+            <h1 className="text-2xl font-bold mb-6 text-center">Cadastrar Universidade</h1>
+            <form onSubmit={saveUniversity} className="space-y-5">
+            <div>
+                <label htmlFor="abreviatura" className="block text-sm font-medium mb-1">
+                Abreviatura
+                </label>
+                <input
+                type="text"
+                placeholder="Abreviatura Universidade"
+                id="abreviatura"
+                required
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+            </div>
+            <div>
+                <label htmlFor="nome" className="block text-sm font-medium mb-1">
+                Nome
+                </label>
+                <input
+                type="text"
+                placeholder="Nome"
+                id="nome"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+            </div>
+            <div>
+                <label htmlFor="endereco" className="block text-sm font-medium mb-1">
+                Endereço
+                </label>
+                <input
+                type="text"
+                placeholder="Endereço"
+                id="endereco"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+            </div>
+            <Button type="submit" className="w-full">
+                Salvar
+            </Button>
             </form>
         </div>
 
